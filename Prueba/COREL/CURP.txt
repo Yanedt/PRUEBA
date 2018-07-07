@@ -1,0 +1,123 @@
+CURP
+https://vidadigital.com.mx/es/expresiones/regulares/curp/
+2015-10-10 por Víctor Daniel Castillo Díaz
+
+Expresiones regularesResumen: Descripción de la estructura que guarda la CURP y la forma en que podemos determina si una determinada serie de caracteres corresponde con dicha estructura o no por medio de una expresión regular. Se presentan ejemplos prácticos en Java y JavaScript. 
+
+Palabras clave: Expresión regular, CURP
+
+La CURP es un código alfanumérico biunívoco de dieciocho caracteres definido por el Registro Nacional de Población (RENAPO) con la finalidad de identificar a personas residentes en el país nacionales o extranjeras. 
+
+Reglas para conformar la CURP 
+Primer carácter alfabético del primer apellido
+Primer vocal no inicial del primer apellido
+Primer carácter alfabético del segundo apellido
+Primer carácter alfabético del primer nombre, en caso de José o María se empleara el segundo nombre si lo hubiera
+Dos últimos dígitos del año de nacimiento
+Dos dígitos del mes de nacimiento
+Dos dígitos del día de nacimiento
+Carácter H o M para indecar el género Hombre o Mujer segun corresponda
+Dos caracteres alfabeticos correspondiente a la clave de la entidad federativa de nacimiento, ver Catálogo de entidades federativas de nacimiento
+Primer consonante no inicial del primer apellido
+Primer consonante no inicial del segundo apellido
+Primer consonante no inicial del nombre
+Dos dígitos para evitar duplicidades
+
+Por ejemplo la CURP SIHC400128HDFLLR01 correspondería a un famoso personaje de sexo masculino nacido en el Distrito Federal el 28 de Enero de 1940. 
+
+Para verificar que dicho CURP tiene una estructura valida, podremos apoyarnos de una expresión regular como la siguiente. 
+
+Expresión regular de la CURP 
+
+ ^[A-Z]{1}[AEIOU]{1}[A-Z]{2}
+[0-9]{2}(0[1-9]|1[0-2])(0[1-9]|1[0-9]|2[0-9]|3[0-1])
+[HM]{1}
+(AS|BC|BS|CC|CS|CH|CL|CM|DF|DG|GT|GR|HG|JC|MC|MN|MS|NT|NL|OC|PL|QT|QR|SP|SL|SR|TC|TS|TL|VZ|YN|ZS|NE)
+[B-DF-HJ-NP-TV-Z]{3}
+[0-9A-Z]{1}
+[0-9]{1}$
+Dividiremos la expresión a fin de explicarla con mayor claridad. 
+
+La subexpresión [A-Z]{1}[AEIOU]{1}[A-Z]{2} 
+Acepta un carácter alfabético
+Seguido de una vocal
+Más dos caracteres alfabéticos
+La subexpresión [0-9]{2}(0[1-9]|1[0-2])(0[1-9]|1[0-9]|2[0-9]|3[0-1]) 
+Acepta dos dígitos en cualquier combinación
+seguidos de dos dígitos que pueden ser 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11 o 12
+Más dos dígitos que pueden ser 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11 o 12, 13, 14, 15, 16, 17, 18, 19, 20, 21 o 22, 23, 24, 25, 26, 27, 28, 29, 30 o 31.
+Con lo cual tenemos una fecha con dos dígitos para el año, dos dígitos para el mes y dos dígitos para el dia. 
+
+La subexpresión [HM]{1} 
+Acepta un carácter H o M
+Para índicar el género Hombre o Mujer según corresponda. 
+
+La subexpresión (AS|BC|BS|CC|CS|CH|CL|CM|DF|DG|GT|GR|HG|JC|MC|MN|MS|NT|NL|OC|PL|QT|QR|SP|SL|SR|TC|TS|TL|VZ|YN|ZS|NE) 
+Acepta dos caracteres alfabéticos de entre cualquiera de los definidos
+Los pares de caracteres alfabéticos definidos, corresponden a la clave de la entidad federativa de nacimiento o bien en el caso de los nacidos en el extranjero NE. 
+
+La subexpresión [B-DF-HJ-NP-TV-Z]{3} 
+Acepta tres consonantes consecutivas en cualquier combinación
+Con lo cual tenemos una las consonantes no iniciales del primer apellido, segundo apellido y nombre. 
+
+La subexpresión [0-9A-Z]{1} 
+Acepta un dígito o carácter alfabético
+y finalmenta la subexpresión [0-9]{1}$ 
+Acepta un dígito e indica el término de la expresión regular
+Los dos caracteres reservados por RENAPO para el manejo de homonimias. 
+
+Catálogo de entidades federativas de nacimiento 
+
+Entidad federativa	Clave
+Aguascalientes	AS
+Baja California	BC
+Baja California Sur	BS
+Campeche	CC
+Coahuila	CL
+Colima	CM
+Chiapas	CS
+Chihuahua	CH
+Distrito Federal	DF
+Durango	DG
+Guanajuato	GT
+Guerrero	GR
+Hidalgo	HG
+Jalisco	JC
+México	MC
+Michoacán	MN
+Morelos	MS
+Nayarit	NT
+Nuevo León	NL
+Oaxaca	OC
+Puebla	PL
+Querétaro	QT
+Quintana Roo	QR
+San Luis Potosí	SP
+Sinaloa	SL
+Sonora	SR
+Tabasco	TC
+Tamaulipas	TS
+Tlaxcala	TL
+Veracruz	VZ
+Yucatán	YN
+Zacatecas	ZS
+Nacido Extranjero	NE
+
+
+Finalmente el siguiente fragmento de código presenta la expresión regular en un método que valida que una CURP cumpla con el formato establecido a partir de la expresión regular previamente analizada.
+ import java.util.regex.Pattern;
+private boolean validarCURP(String curp)
+{ String regex =
+"[A-Z]{1}[AEIOU]{1}[A-Z]{2}[0-9]{2}" +
+"(0[1-9]|1[0-2])(0[1-9]|1[0-9]|2[0-9]|3[0-1])" +
+"[HM]{1}" +
+"(AS|BC|BS|CC|CS|CH|CL|CM|DF|DG|GT|GR|HG|JC|MC|MN|MS|NT|NL|OC|PL|QT|QR|SP|SL|SR|TC|TS|TL|VZ|YN|ZS|NE)" +
+"[B-DF-HJ-NP-TV-Z]{3}" +
+"[0-9A-Z]{1}[0-9]{1}$";
+Pattern patron = Pattern.compile(regex);
+if(!patron.matcher(curp).matches())
+{ return false;
+}else
+{ return true;
+}
+}

@@ -1,0 +1,136 @@
+    nav .navegador label {
+         display                      none ;para que se vea o no la imagen de seleccion
+         width                          8% ;	  
+	 border-right    2px solid #ffffff ;
+ }	
+    nav .navegador  labelhover{
+         cursor                    pointer ;
+	 background        rgba(0,0,0,0.3) ;trasnparenca
+			   }
+    #btn-menu{
+         display                     none ;para quitar el check box
+}
+   nav ul, ol   {
+	list-style                   none ;
+	margin                0em 0em 0em ;
+        padding               0em 0em 0em ; 
+}
+    nav .navegador  .menu{
+         background-color          #DC143f ;
+	 text-align                 center ;
+	 flex-grow                       1 ; en vez de estar poniendo el porcentaje esta linea se encarga de distribuirlo correctamente
+    }
+	
+   .menu  li {
+	text-align                 center ; 
+	}
+   .menu li a {
+	background-color          #DC143C ;
+	color                       white ;
+	text-decoration              none ;				
+	display                     block ;
+	border          2px solid #800000 ;
+	}
+    .menu li ahover {
+        background-color            white ; 
+        color                       black ;
+   }
+    .menu li ul {
+        display                      none ;
+	position                 absolute ;su propio espacio
+	min-width                   140px ;
+   }
+    .menu lihover  ul {
+	display                     block ;
+   }
+   
+    a ladoooooooooooo
+    .menu li ul li {
+     position                   relative ;a un lado
+    }
+			
+    .menu li ul li ul {
+     right-140px;
+     top0px;
+   }
+   
+
+lllllllllllllllllllllllllllllllllllllllllll
+<nav>
+            <!--Sección de menu o navegación-->
+            <div class="navegador">
+             
+                  
+		<input type="checkbox" id="btn-menu">
+		<label for="btn-menu">  <img  src = "images/menu.png"  alt = "menu"> </label>
+		
+                
+                <ul class="menu">				
+		    <li><a href="">inicio</a></li>	
+	        </ul>
+                
+                <ul class="menu">
+		    <li><a href="">oferta educativa</a>
+			<ul> <li><a href="">licenciatura</a>
+                               <ul>
+		                 <li><a href="">Arquitectura</a>
+                                    <ul>
+		                    <li><a href="">Arquitectura</a>
+                                       <ul>
+		                         <li><a href="">Arquitectura</a></li>
+                                         <li><a href="">Arquitectura</a></li>
+                                         <li><a href="">Arquitectura</a></li>
+                                         </ul>
+                                    </li>
+                                    <li><a href="">Arquitectura</a></li>
+                                    <li><a href="">Arquitectura</a></li>
+                                    </ul>
+                                 </li>
+			         <li><a href="">Periodosmo</a></li>
+			         <li><a href="">Derecho</a></li>
+			         <li><a href="">Ing, Civil</a></li>
+			         <li><a href="">Ing Computacion</a></li>
+			        <li><a href="">Ing Mecnica</a></li>
+			        <li><a href="">Pedagogia</a></li>
+			       </ul>
+			    </li>
+			    <li><a href="">posgrado</a></li>
+			    <li><a href="">educaion continua</a></li>
+			    <li><a href="">centro de lenguas extranjeras</a></li>
+			    <li><a href="">licenciatura</a></li>
+			    <li><a href="">posgrado</a></li>
+			</ul>
+		     </li>	
+		</ul>
+                
+                <ul class="menu">				
+		    <li><a href="">inicio</a></li>	
+	        </ul>
+                
+                <ul class="menu">				
+		    <li><a href="">inicio</a></li>	
+	        </ul>
+                
+                <ul class="menu">				
+		    <li><a href="">inicio</a></li>	
+	        </ul>
+			
+            </div>
+            
+            
+            
+            <div class="redes">
+                <div class="rf">
+                    <img src="images/facebook.png" alt="facebook" name="facebook"/> 
+                </div>
+                <div class="rw">
+                    <img src="images/whatsapp.png" alt="whatsapp" name="whatsapp"/> 
+                </div>
+                <div class="rt">
+                    <img src="images/TWITTER.png" alt="twitter" name="twitter"/> 
+                </div>
+                <div class="ri">
+                    <img src="images/instagram1.png" alt="instagram" name="instagram"/> 
+                </div>
+            </div>
+        </nav>

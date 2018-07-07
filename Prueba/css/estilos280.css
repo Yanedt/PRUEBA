@@ -1,0 +1,702 @@
+@media screen and (min-width: 110px) and (max-width: 800px) {
+*{
+    margin:            0em 0em 0em ;
+    padding:           0em 0em 0em ; 
+}
+﻿body{
+    background-color:         gray ;
+    margin:            0em 0em 0em ;
+    padding:           0em 0em 0em ;
+    display:                  flex ;
+    flex-wrap:                wrap ;
+    width:                    100% ;
+    height:  300px;
+}
+
+header{
+    background-color:palegoldenrod ;
+    margin:            0em 0em 0em ;
+    padding:           0em 0em 0em ;
+    display:                  flex ;
+    flex-wrap:                wrap ;
+    width:                    100% ;
+}
+
+header .izquierda{
+    background-color:palegoldenrod ;
+    margin:            0em 0em 0em ;
+    padding:           0em 0em 0em ;
+    display:                  flex ;
+    flex-wrap:                wrap ;
+    width:                     35% ;
+}
+header .izq1{
+    background-color:palegoldenrod ;
+    margin:         auto auto auto ;/*cambio img*/
+    padding:           0em 0em 0em ;
+    width:                     18% ;
+}
+
+header .izq1 img{
+    margin:            0em 0em 0em ;
+    padding:           0em 0em 0em ;
+    width:                    100% ;
+    
+}
+header .izq2{
+    background-color:palegoldenrod ;
+    margin:          auto 0em auto ;/*cambio*/
+    padding:           0em 0em 0em ;
+    width:                     82% ;
+}
+.izq2 p{
+    margin:          auto 0em auto ;
+    padding:           0em 0em 0em ;
+    font-size:                .4em ;
+    text-align:               left ;
+}
+header .centro{
+    background-color:palegoldenrod ;
+    margin:            0em 0em 0em ;
+    padding:           0em 0em 0em ;
+    width:                     30% ;
+    display:                  flex ;
+    flex-wrap:                wrap ;   
+}
+header .centro .nada{
+    background-color:palegoldenrod ;
+    margin:            0em 0em 0em ;
+    padding:           0em 0em 0em ;
+    width:                     15% ;
+    display:                  flex ;  
+}
+header .centro .logo{
+    background-image: url(../images/PIT.gif);
+    background-repeat:   no-repeat ;
+    background-size:        contain;
+    background-position:    50% 50%;/*imagen*/
+    width:                     50% ;
+    margin:          auto auto auto ;
+    display:                  flex ;     
+}
+header .centro .logo p{
+    margin:          auto auto auto ;
+    padding:           0em 0em 0em ;
+    font-size:                .4em ;
+    text-align:              center ;
+    
+}
+
+
+header .derecha{
+    background-color:palegoldenrod ;
+    margin:            0em 0em 0em ;
+    padding:           0em 0em 0em ;
+    display:                  flex ;
+    flex-wrap:                wrap ;
+    width:                     35% ;
+}
+header .der1{
+    background-color:palegoldenrod ;
+    margin:          auto 0em auto ;/*cambio*/
+    padding:           0em 0em 0em ;
+    width:                     80% ;
+}
+.der1 p{
+    margin:          auto 0em auto ;
+    padding:           0em 0em 0em ;
+    font-size:                .4em ;
+    text-align:              right ;
+    
+}
+header .der2{
+    background-color: palegoldenrod ;
+    margin:            auto auto auto ;/*cambio img*/
+    padding:           0em 0em 0em ;
+    width:                     20% ;
+}
+
+header .der2 img{
+    margin:            0em 0em 0em ;
+    padding:           0em 0em 0em ;
+    width:                    100% ;
+   
+}
+
+
+
+nav{
+    background-color:       green ;
+    margin:           0em 0em 0em ;
+    padding:          0em 0em 0em ;
+    display:                 flex ;
+    flex-wrap:               wrap ;
+    width:                   100% ;
+    z-index:                    3 ;
+}
+nav .seleccion{
+    background-color:     #1865dd ;
+    margin:           0em 0em 0em ;
+    padding:          0em 0em 0em ;
+    width:                    55% ;/*Tamaño de el menu*/
+    position:            relative ;
+}
+nav .sel1{
+    margin:           0em 0em 0em ;
+    padding:          0em 0em 0em ;
+    position:            absolute ;
+    width:                   100% ;
+}
+
+nav .sel1 p{
+    margin:           0em 0em 0em ;
+    padding:          0em 0em 0em ;
+    font-size:               .6em ;/*tamaño de la imagen*/
+    color:                  white ;
+    position:              static ; 
+    width:                     5% ;
+    text-align:               left;
+    cursor:        pointer ;
+}
+nav .sel2{
+    background-color:     #1865dd ;
+    margin:           0em 0em 0em ;
+    padding:          0em 0em 0em ;
+    display:                 flex ;
+    flex-wrap:               wrap ;
+    width:                   100% ;
+    position:            absolute ;
+    display:                 none ;
+
+}
+
+
+nav .sel2 .cuadro{
+    background-color:      #7f0add;
+    margin:           0em 0em 0em ;
+    padding:          0em 0em 0em ;
+    width:                   100% ;/*tome todo el ancho*/
+    position:              static ;
+
+}
+
+nav  .cuadro li, ul, a{
+    list-style:      none;
+    text-decoration: none;
+}
+nav ul{
+    background-color:      #2190dd;
+    margin:           0em 0em 0em ;
+    padding:          0em 0em 0em ;
+    width:                   100% ;
+    position:               static;
+
+}
+nav  li {
+    background-color:      #16b7dd;
+    margin:           0em 0em 0em ;
+    padding:          0em 0em 0em ;
+    text-align:              left ;/*la letra*/
+    width:                   100% ;
+  
+}
+
+nav  li a{
+    margin:           0em 0em 0em ;
+    padding:          0em 0em 0em ;
+    color:                #009900 ;
+    width:                    100%;
+    
+}
+
+nav li ul{
+    background-color:      #2190dd;
+    margin:           0em 0em 0em ;
+    padding:          0em 0em 0em ;
+    display:                  none;
+    position:             absolute;
+    width:                    100% ;/*para el ancho submenu*/
+}
+
+nav li:hover{
+    background-color: #4cddc0;
+}
+nav li:hover > ul {/*solo si paso el mouse mouse mouse pero como es para celuar le quitamos este caso*/
+    display:none;
+}
+
+nav li ul li {
+    position:static;
+}
+
+
+nav li ul li ul {
+    /*right:   -100%;/*depende de el ancho minimo que se le asigno anteriormente*/
+   /* top:        0;/*para que este a la misma altura*/
+    width:   100%;
+}
+
+/*una flechita*/
+nav li .flecha{
+    font-size:      9px;
+    padding-left:   6px;
+    display:       none;
+  
+}
+nav li .flecha label{
+cursor:pointer;
+  
+}
+
+
+/*
+psuedo-clase CSS3
+:not         en combinación con
+:last-child
+  para excluir a todos los elementos del menu que no contengan submenus
+  (todos los <a> que no sean :last-child)
+  y solo afectar a los span.flecha de los que si
+*/
+
+nav li a:not(:last-child) .flecha {
+    display: inline;
+    float:    right;
+   
+    
+  
+}
+nav .sel2 p{
+    display:block;
+    cursor:pointer;
+}
+/* bottttttttttttttoooooooooooooooooooooooonnnnnnneeeeeeeeeeezzzzzzzzzzzz*/
+nav #btn-menu2 { /*se encuentra el check box*/
+    display:none;
+    float: left;
+}
+
+nav #btn-menu2 label {
+    background:     pink;
+ 
+}
+
+#btn-menu2:checked ~ ul{/*solo cuando se da click*/
+    display:block;
+}
+/* bottttttttttttttoooooooooooooooooooooooonnnnnnneeeeeeeeeeezzzzzzzzzzzz*/
+nav #btn-menu21 { /*se encuentra el check box*/
+    display:none;
+    float: left;
+}
+
+nav #btn-menu21 label {
+    background:     pink;
+}
+
+#btn-menu21:checked ~ ul{/*solo cuando se da click*/
+    display:block;
+}
+/* bottttttttttttttoooooooooooooooooooooooonnnnnnneeeeeeeeeeezzzzzzzzzzzz*/
+nav #btn-menu22 { /*se encuentra el check box*/
+    display:none;
+    float: left;
+}
+
+nav #btn-menu22 label {
+    background:     pink;
+}
+
+#btn-menu22:checked ~ ul{/*solo cuando se da click*/
+    display:block;
+}
+/* bottttttttttttttoooooooooooooooooooooooonnnnnnneeeeeeeeeeezzzzzzzzzzzz*/
+
+/* bottttttttttttttoooooooooooooooooooooooonnnnnnneeeeeeeeeeezzzzzzzzzzzz*/
+nav #btn-menu3 { /*se encuentra el check box*/
+    display:none;
+    float: left;
+}
+
+nav #btn-menu3 label {
+    background:     pink;
+}
+
+#btn-menu3:checked ~ ul{/*solo cuando se da click*/
+    display:block;
+}
+/* bottttttttttttttoooooooooooooooooooooooonnnnnnneeeeeeeeeeezzzzzzzzzzzz*/
+nav .menu2{
+    background-color:      #4fd7dd;
+    margin:           0em 0em 0em ;
+    padding:          0em 0em 0em ;
+    display:                 flex ;
+    flex-wrap:               wrap ;
+    width:                    45% ;/*tamaño de los botones de registreo*/
+}
+nav .menu2 .botones{
+    background-color:      #4fd7dd;
+    margin:          0em auto 0em ;
+    padding:          0em 0em 0em ;
+    width:                    48% ;
+    border-right: 2px solid #cc00cc ;
+   
+  
+}
+nav .menu2 .botones p{
+    margin:           0em 0em 0em ;
+    padding:          0em 0em 0em ;
+    text-align:            center ;
+    font-size:              0.6em ;
+}
+
+
+
+main{
+    background-color:      #ccccff ;
+    margin:            0em 0em 0em ;
+    padding:           0em 0em 0em ;
+    display:                  flex ;
+    flex-wrap:                wrap ;  
+    width:                    100% ;
+    z-index:                     1 ;/*este atras de el menu*/
+}
+main .contenido{
+    margin:            0em 0em 0em ;
+    padding:           0em 0em 0em ;
+    display:                  flex ;
+    flex-wrap:                wrap ;  
+    width:                     90% ;
+    position:               static ;
+    z-index:                     2 ;/*este atras de el menu*/
+}
+main .contenido .carruselnada{
+    background:              #ccccff ;/*color de fondo de carrusel de imagenees*/
+    margin:            0em 0em 0em ;
+    padding:           0em 0em 0em ;  
+    width:                     15% ;/*quitar espacio de izquierda y derecha*/
+    display:                  flex ;
+    position:               static ;
+}
+/*formulariiiiiiiiiiiiiiioooooooooooooooooooo registro*/
+main .contenido .logeo{
+   margin:            0em 0em 0em ;
+   padding:           0em 0em 0em ;
+   width:                     70% ;/*lo que va estar en medio 60%*/
+   display:                  none ;/*para que no se vea en la pantalla principal*/
+}
+
+main .contenido .logeo form{
+   background:           #000142;
+   background-image:  url(../images/form.gif);
+   background-repeat:   no-repeat ;
+   background-size:         cover ;
+   margin:           0em auto 0em ;/*separacion de arriba y centrado*/
+   padding:           0em 0em 2em ;/*arriba y abajo*/
+   width:                     90% ;
+
+}
+
+form h2{
+   margin:            0em 0em 0em ;
+   padding:           0em 0em 0em ;
+   color:                   blue  ;
+   text-align:             center ;  
+   font-size:                 1em ;
+}
+form .usu{
+   background-image: url(../images/login.gif);
+   background-repeat:   no-repeat ;
+   background-size:        contain;  
+   background-position:    50% 50%;/*imagen*/
+   margin:            .2em 0em 0em ;/*separacion de arriba y centrado*/
+   padding:           .6em 0em .6em ;
+}
+
+form  .per{  
+   background-image: url(../images/people.png);
+   background-repeat:    no-repeat ;
+   background-size:        contain ;
+   background-position: 1px center ;/*separacion de el input lado izquierdo*/
+   padding:             0 0 0 22px ;/*dar espacio entre el texto e imagen*/
+   font-size:                 .8em ;
+}
+
+ form input {
+    background:             #DOD9E2;/*color del input*/
+    display:               block ;
+    width:                   80% ;
+    padding:         0em 0em 0em ;
+    margin:         .4em auto .4em ; /*centralo */
+    font-size:               1em ;
+    border-radius:           5px ;
+    border-color:        #00ccff ;
+    font-size:              .8em ;
+    
+}
+
+
+form .botoneslogeo{  /*contenedor*/
+    margin:          0em 0em 0em ;
+    padding:         0em 0em 0em ; 
+    width:                  100% ;
+    display:                flex ;
+    flex-wrap:              wrap ;
+}
+form .botoneslogeo .separacion{ /*division*/
+    margin:          0em auto 0em ;/*centrado*/
+    padding:         0em 0em 0em ; 
+    width:                  100% ;/*para ocupar el 100 y bajar al boton*/
+    display:                flex ;
+}
+/*al tipo de input que es submit*/
+  form input[type="submit"]{
+    background:          #333149 ;
+    color:                 wheat ;
+    cursor:              pointer ;
+    border-radius:           5px ;
+    width:                   40% ;
+    margin:         .6em auto 1em ;/*centrado*/
+    padding:         0em 0em 0em ;
+    border:   1px solid  #00ccff ;
+    
+}
+
+form .btnsalir{
+    background:          #333149 ;
+    color:                 wheat ;
+    cursor:              pointer ;
+    border-radius:           5px ;
+    width:                   40% ;
+    margin:         0em auto 0em ;/*centrado*/
+    padding:         0em 0em 0em ;
+    border:   1px solid  #00ccff ;  
+    text-align:           center ;
+    font-size:               .8em ;
+}
+#link{
+   margin:          0em 0em 0em ; 
+   padding:         0em 0em 0em ; 
+   width:                  100% ;
+}
+#link p{
+   margin:         0em auto 0em ; 
+   padding:        .5em 0em 0em ; 
+   width:                   80% ;
+   text-align:           center ;
+   color:                 wheat ;
+   font-size:              .8em ;
+}
+/*formulariiiiiiiiiiiiiiioooooooooooooooooooo*/
+
+
+
+
+
+/*####################################################*/
+/*formulalllllllllllllooooooooooooooogggiiiiiiiinnnnnnnn login*/
+main .contenido .entrada{
+   margin:            0em 0em 0em ;
+   padding:           0em 0em 0em ;
+   width:                     70% ;/*lo que va estar en medio 60%*/
+   display:                  none ;/*para que no se vea en la pantalla principal*/
+}
+
+main .contenido .entrada form{
+   background:           #000142;
+   background-image:  url(../images/form.gif);
+   background-repeat:   no-repeat ;
+   background-size:         cover ;
+   margin:           0em auto 0em ;/*separacion de arriba y centrado*/
+   padding:           0em 0em 2em ;/*arriba y abajo*/
+   width:                    90% ;
+
+}
+
+.entrada form h2{
+   margin:            0em 0em 0em ;
+   padding:           0em 0em 0em ;
+   color:                   blue  ;
+   text-align:             center ;  
+   font-size:                 1em ;
+}
+.entrada form .usu{
+   background-image: url(../images/login.gif);
+   background-repeat:   no-repeat ;
+   background-size:        contain;  
+   background-position:    50% 50%;/*imagen*/
+   margin:            .2em 0em 0em ;/*separacion de arriba y centrado*/
+   padding:           .6em 0em .6em ;
+}
+
+.entrada form  .per{  
+   background-image: url(../images/people.png);
+   background-repeat:    no-repeat ;
+   background-size:        contain ;
+   background-position: 1px center ;/*separacion de el input lado izquierdo*/
+   padding:             0 0 0 22px ;/*dar espacio entre el texto e imagen*/
+   font-size:                 .8em ;
+}
+
+ .entrada form input {
+    background:             #DOD9E2;/*color del input*/
+    display:               block ;
+    width:                   80% ;
+    padding:         0em 0em 0em ;
+    margin:         .4em auto .4em ; /*centralo */
+    font-size:               1em ;
+    border-radius:           5px ;
+    border-color:        #00ccff ;
+    font-size:              .8em ;
+    
+}
+
+
+.entrada form .botoneslogeo{  /*contenedor*/
+    margin:          0em 0em 0em ;
+    padding:         0em 0em 0em ; 
+    width:                  100% ;
+    display:                flex ;
+    flex-wrap:              wrap ;
+}
+.entrada form .botoneslogeo .separacion{ /*division*/
+    margin:          0em auto 0em ;/*centrado*/
+    padding:         0em 0em 0em ; 
+    width:                  100% ;/*para ocupar el 100 y bajar al boton*/
+    display:                flex ;
+}
+/*al tipo de input que es submit*/
+ .entrada form input[type="submit"]{
+    background:          #333149 ;
+    color:                 wheat ;
+    cursor:              pointer ;
+    border-radius:           5px ;
+    width:                   50% ;
+    margin:         .6em auto 1em ;/*centrado*/
+    padding:         0em 0em 0em ;
+    border:   1px solid  #00ccff ;
+    font-size:              .8em ;
+    
+}
+
+.entrada form .btnsalir{
+    background:          #333149 ;
+    color:                 wheat ;
+    cursor:              pointer ;
+    border-radius:           5px ;
+    width:                   50% ;
+    margin:         0em auto 0em ;/*centrado*/
+    padding:         0em 0em 0em ;
+    border:   1px solid  #00ccff ;  
+    text-align:           center ;
+    font-size:               .8em ;
+}
+#link2{
+   margin:          0em 0em 0em ; 
+   padding:         0em 0em 0em ; 
+   width:                  100% ;
+}
+#link2 p{
+   margin:         0em auto 0em ; 
+   padding:        .5em 0em 0em ; 
+   width:                   80% ;
+   text-align:           center ;
+   color:                 wheat ;
+   font-size:              .8em ;
+}
+
+/*formulalllllllllllllooooooooooooooogggiiiiiiiinnnnnnnn*/
+/*###########################################################*/
+
+
+
+main .contenido .carrusel{
+    margin:            0em 0em 0em ;
+    padding:           0em 0em 0em ;  
+    width:                     70% ;/*lo que va a estar enmedio*/
+    display:                 block ;/*siempre se vea*/
+}
+
+
+
+main .redes{
+    background-color:      #ccccff ;
+    margin:            0em 0em 0em ;
+    padding:           0em 0em 0em ;
+    width:                     10% ;
+    position:               static ; 
+    cursor:                pointer ;
+}
+.redes .rf{
+   margin:           0em 0em 100% ;/*para la separacion de las imagenes*/
+   padding:           0em 0em 0em ;
+   width:                    100% ;
+   position:               static ;
+}
+.redes .rf img{
+   background-color:         blue ;
+   margin:            0em 0em 0em ;
+   padding:           0em 0em 0em ;
+   width:                      10% ;
+   position:                 fixed;
+  
+}
+.redes .rw{
+   margin:           0em 0em 200% ;
+   padding:           0em 0em 0em ;
+   width:                    100% ;
+   position:             static ;
+}
+.redes .rw img{
+   background-color:        green ;
+   margin:            0em 0em 0em ;
+   padding:           0em 0em 0em ;
+   width:                     10% ;
+   position:                 fixed; 
+}
+.redes .rt{
+   margin:            0em 0em 300% ;
+   padding:           0em 0em 0em ;
+   width:                    100% ;
+   position:               static ;
+}
+.redes .rt img{
+   background-color:   blue ;
+   margin:            0em 0em 0em ;
+   padding:           0em 0em 0em ;
+   width:                      10% ;
+   position:                 fixed; 
+}
+.redes .ri{
+ 
+   margin:            0em 0em 400% ;
+   padding:           0em 0em 0em ;
+   width:                    100% ;
+   position:             relative ;
+}
+.redes .ri img{
+   background-image: url(../images/fondo.png);
+   background-repeat:   no-repeat ;
+   background-size:        cover  ;
+   margin:            0em 0em 0em ;
+   padding:           0em 0em 0em ;
+   width:                      10% ;
+   position:                 fixed; 
+}
+
+
+#contenido{
+    background:             #ececec ;
+    border:              solid #ccc ;
+    /*aumentando el 2px 'aparece' un borde*/
+    margin:            0em auto 0em ;
+    padding:              4px 4px;
+    width:                      50% ;   
+}
+/* ********** notificaciob */
+#required_notification {  
+    color:                 #d45252;    
+    float:                    right ;  
+}  
+
+
+}
